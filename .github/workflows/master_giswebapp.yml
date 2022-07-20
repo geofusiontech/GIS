@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'GISWebApp'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3B5A7D179519430797AB80DF3901CC2C }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1753BA7D5F8B45178AE04E1E4C594750 }}
           package: .
