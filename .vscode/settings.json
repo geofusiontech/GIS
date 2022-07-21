@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/e34b19a0-c47c-4b2b-a081-58d9831d07ac/microsoft.web/sites/subscriptions/e34b19a0-c47c-4b2b-a081-58d9831d07ac/resourceGroups/SumitTest/providers/Microsoft.Web/sites/mapdisplay",
+    "appService.deploySubpath": "Esri\\Javascript\\MapDisplay"
+}
