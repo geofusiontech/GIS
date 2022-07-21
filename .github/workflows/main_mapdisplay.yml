@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - mapdisplay
+name: Build and deploy Node.js app to Azure Web App - MapDisplay
 
 on:
   push:
@@ -50,7 +50,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'mapdisplay'
+          app-name: 'MapDisplay'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D7EBD9FF78D7487195A49B49D4B8ECC0 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_85EC8B533E054850A60210AB64CB1726 }}
           package: .
