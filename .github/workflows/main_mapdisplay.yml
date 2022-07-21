@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'MapDisplay'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_85EC8B533E054850A60210AB64CB1726 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3D532C08D34D47E79F78C4E7BAB2F103 }}
           package: .
