@@ -1,4 +1,4 @@
-require(["esri/config","esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer","esri/widgets/Legend","esri/widgets/Expand"], function (esriConfig,Map, MapView,FeatureLayer,Legend,Expand) {
+require(["esri/config","esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer","esri/widgets/Legend","esri/widgets/Expand","esri/widgets/LayerList"], function (esriConfig,Map, MapView,FeatureLayer,Legend,Expand,LayerList) {
 
     esriConfig.apiKey = "YOUR_API_KEY";
 
@@ -47,5 +47,16 @@ const expand = new Expand(
     content:legend
   }
 );
+layerList = new LayerList({
+  container: document.createElement("div"),
+  view: view
+});
+layerListExpand = new Expand({
+  expandIconClass: "esri-icon-layer-list",  // see https://developers.arcgis.com/javascript/latest/guide/esri-icon-font/
+  // expandTooltip: "Expand LayerList", // optional, defaults to "Expand" for English locale
+  view: view,
+  content: layerList
+});
 view.ui.add(expand,"top-right");
+view.ui.add(layerListExpand,"top-left");
   });
